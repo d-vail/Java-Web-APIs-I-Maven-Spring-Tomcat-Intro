@@ -22,6 +22,16 @@ public class Employee {
     this.healthPlanId = healthPlanId;
   }
 
+  public Employee(Employee employee) {
+    this.id = employee.id;
+    this.fname = employee.fname;
+    this.lname = employee.lname;
+    this.salary = employee.salary;
+    this.has401k = employee.has401k;
+    this.companyId = employee.companyId;
+    this.healthPlanId = employee.healthPlanId;
+  }
+
   public long getId() {
     return id;
   }
